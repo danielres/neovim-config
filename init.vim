@@ -1,5 +1,10 @@
 call plug#begin('~/.config/nvim/plugged')
 
+let mapleader = "\<Space>"
+
+Plug 'folke/which-key.nvim'
+
+
 " TypeScript/JavaScript support
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
@@ -24,4 +29,15 @@ Plug 'sheerun/vim-polyglot'
 
 
 call plug#end()
+
+lua << EOF
+require("which-key").setup {
+  -- your configuration comes here
+  -- or leave it empty to use the default settings
+  -- refer to the configuration section below
+
+}
+EOF
+
+nnoremap <leader>h :help<CR>
 
