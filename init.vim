@@ -26,6 +26,11 @@ Plug 'tpope/vim-fugitive'
 " Better syntax highlighting
 Plug 'sheerun/vim-polyglot'
 
+" Themes
+Plug 'morhetz/gruvbox'
+
+" Status line
+Plug 'itchyny/lightline.vim'
 
 
 call plug#end()
@@ -39,5 +44,15 @@ require("which-key").setup {
 }
 EOF
 
+set number
+set relativenumber
+
 nnoremap <leader>h :help<CR>
 
+colorscheme gruvbox
+set background=dark
+
+set laststatus=2
+let g:lightline = {
+	\ 'colorscheme' : 'gruvbox',
+	\ }
