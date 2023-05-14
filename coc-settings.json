@@ -1,0 +1,35 @@
+{
+    "suggest.noselect": false,
+    "suggest.enablePreselect": true,
+    "suggest.triggerCompletionWait": 200,
+    "suggest.floatEnable": true,
+    "suggest.autoTrigger": "always",
+    "tabnine.enable": true,
+    "coc.preferences.useQuickfixForLocations": true,
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.jumpCommand": "cwindow",
+    "coc.preferences.colorSupport": true,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "svelte"],
+  "coc.source.around.enable": true,
+  "coc.source.buffer.enable": true,
+  "coc.source.file.enable": true,
+ "languageserver": {
+    "svelte": {
+      "command": "svelteserver",
+      "filetypes": ["svelte"],
+      "rootPatterns": ["package.json"],
+      "initializationOptions": {
+        "config": {
+          "svelte.plugin.svelte.format.enable": true
+        }
+      }
+    }
+  },
+"svelte.plugin.svelte.format.enable": true,
+  "svelte.plugin.css.format.enable": true,
+  "svelte.plugin.html.format.enable": true,
+  "svelte.plugin.javascript.format.enable": true,
+  "svelte.plugin.typescript.format.enable": true,
+  "svelte.enable-ts-plugin": true
+}
+
