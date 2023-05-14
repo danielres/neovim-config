@@ -23,7 +23,15 @@
           "svelte.plugin.svelte.format.enable": true
         }
       }
-    }
+    },
+    "tsserver": {
+  "module": "typescript",
+  "config": {
+    "hostInfo": "nvim-coc"
+  },
+  "disableWorkspaceFolders": false
+}
+
   },
 "svelte.plugin.svelte.format.enable": true,
   "svelte.plugin.css.format.enable": true,
